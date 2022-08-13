@@ -4,6 +4,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
+    "minify": "npx tailwindcss -o ./css/build.css --minify"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
